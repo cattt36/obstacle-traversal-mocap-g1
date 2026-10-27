@@ -1,0 +1,677 @@
+{
+ "description": "Sealed test set, written from a fixed specification without access to the training data and used once for the final report.",
+ "cases": [
+  {
+   "id": "t2_paraphrase_1",
+   "condition": "paraphrase",
+   "query": "Crouch down and walk under that wooden plank bridge ahead.",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_2",
+   "condition": "paraphrase",
+   "query": "从前面那座独木桥底下钻过去。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_3",
+   "condition": "paraphrase",
+   "query": "Please lower your body and pass beneath the narrow beam bridge without falling over.",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_4",
+   "condition": "paraphrase",
+   "query": "弯下腰，从独木桥下面穿过去，小心别摔。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_5",
+   "condition": "paraphrase",
+   "query": "Run across the three stepping stakes in front of you.",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_6",
+   "condition": "paraphrase",
+   "query": "跑过那三个梅花桩，每个桩都要踩上去。",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_7",
+   "condition": "paraphrase",
+   "query": "Sprint over the row of 3 wooden posts, one foot on each.",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_8",
+   "condition": "paraphrase",
+   "query": "快速跑过前方的三根木桩。",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_9",
+   "condition": "paraphrase",
+   "query": "Run over all five stepping stakes, alternating left and right.",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_10",
+   "condition": "paraphrase",
+   "query": "从那五个木桩上跑过去。",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_11",
+   "condition": "paraphrase",
+   "query": "Dash across the line of five stumps, landing on every one of them.",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_paraphrase_12",
+   "condition": "paraphrase",
+   "query": "请以奔跑的速度通过五个梅花桩。",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_1",
+   "condition": "code_switch",
+   "query": "帮我 crouch 一下，从那个 bridge 下面过去。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_2",
+   "condition": "code_switch",
+   "query": "Go under the 独木桥 please, 身子放低点。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_3",
+   "condition": "code_switch",
+   "query": "前面有个 plank bridge，你 duck under 它过去就行。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_4",
+   "condition": "code_switch",
+   "query": "Lower your body，从独木桥底下 walk through。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_5",
+   "condition": "code_switch",
+   "query": "跑过那 three 个桩子，one foot each.",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_6",
+   "condition": "code_switch",
+   "query": "Run across 那三个梅花桩，快一点。",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_7",
+   "condition": "code_switch",
+   "query": "前面是 3 stakes，用 running speed 冲过去。",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_8",
+   "condition": "code_switch",
+   "query": "Step on 三个木桩 and run through, 左右脚交替。",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_9",
+   "condition": "code_switch",
+   "query": "把那 five stakes 跑过去。",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_10",
+   "condition": "code_switch",
+   "query": "Run over 五个梅花桩, don't miss any.",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_11",
+   "condition": "code_switch",
+   "query": "前面一排 5 个 stumps，sprint 过去。",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_code_switch_12",
+   "condition": "code_switch",
+   "query": "Cross 那五根木桩 at full speed，每个都踩到。",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_1",
+   "condition": "asr_noise",
+   "query": "从独木乔下面钻过去",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_2",
+   "condition": "asr_noise",
+   "query": "crotch down and go under the bridge",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_3",
+   "condition": "asr_noise",
+   "query": "蹲着从读木桥下面走过去",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_4",
+   "condition": "asr_noise",
+   "query": "bend down go under the would in bridge a head",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_5",
+   "condition": "asr_noise",
+   "query": "跑过三个没花桩",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_6",
+   "condition": "asr_noise",
+   "query": "run a cross the tree stakes",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_7",
+   "condition": "asr_noise",
+   "query": "跑过前面那三根目桩快点",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_8",
+   "condition": "asr_noise",
+   "query": "run across three steaks fast one foot each",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_9",
+   "condition": "asr_noise",
+   "query": "跑过五个美花状",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_10",
+   "condition": "asr_noise",
+   "query": "run across the fife stakes",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_11",
+   "condition": "asr_noise",
+   "query": "从五根木装上跑过去",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_asr_noise_12",
+   "condition": "asr_noise",
+   "query": "run over five stake sat running speed",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_1",
+   "condition": "implicit",
+   "query": "There's a narrow wooden plank on posts across the path at about chest height. Get to the other side underneath it.",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_2",
+   "condition": "implicit",
+   "query": "前方有座独木桥挡着路，桥面大概在你胸口高度，你得从桥那头出来。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_3",
+   "condition": "implicit",
+   "query": "That plank bridge is too low to walk under standing tall, and you're not allowed on top of it. Get past it.",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_4",
+   "condition": "implicit",
+   "query": "头顶那根独木桥的横梁会撞到你的头，到桥对面去。",
+   "expected_action": "CrouchedTraverse",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_5",
+   "condition": "implicit",
+   "query": "There are three little round wooden posts sticking out of the ground ahead; the floor between them is lava. Get across quickly.",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_6",
+   "condition": "implicit",
+   "query": "地上立着三个圆木墩，只能踩着它们过去，越快越好。",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_7",
+   "condition": "implicit",
+   "query": "This is the short stake section, just three of them. Get through it at pace.",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_8",
+   "condition": "implicit",
+   "query": "前面那段路只有三个木桩可以落脚，赶紧冲过去。",
+   "expected_action": "ThreeStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_9",
+   "condition": "implicit",
+   "query": "Five round wooden posts stand between you and the finish line, and the ground between them is off limits.",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_10",
+   "condition": "implicit",
+   "query": "前面五个圆木墩连成一排，地面不能踩，冲到对面去。",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_11",
+   "condition": "implicit",
+   "query": "This time the stake row is the long one, five in total. Make it to the end without stopping.",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_implicit_12",
+   "condition": "implicit",
+   "query": "终点前面有一排五个小木墩，别踩地，抓紧时间过去。",
+   "expected_action": "FiveStepPoleRun",
+   "should_abstain": false
+  },
+  {
+   "id": "t2_ambiguous_1",
+   "condition": "ambiguous",
+   "query": "Run across the stakes.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_2",
+   "condition": "ambiguous",
+   "query": "跑过梅花桩。",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_3",
+   "condition": "ambiguous",
+   "query": "过那排木桩",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_4",
+   "condition": "ambiguous",
+   "query": "Cross the obstacle ahead.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_5",
+   "condition": "ambiguous",
+   "query": "过前面那个障碍",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_6",
+   "condition": "ambiguous",
+   "query": "Do the stepping stake thing.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_7",
+   "condition": "ambiguous",
+   "query": "跑过四个梅花桩",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_8",
+   "condition": "ambiguous",
+   "query": "Run the stakes, three or five, whichever you like.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_9",
+   "condition": "ambiguous",
+   "query": "Go through the course.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_10",
+   "condition": "ambiguous",
+   "query": "完成下一个动作",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_11",
+   "condition": "ambiguous",
+   "query": "Get past it.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_12",
+   "condition": "ambiguous",
+   "query": "跳过那些桩子",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_13",
+   "condition": "ambiguous",
+   "query": "Do the stakes, the short row or the long row, I forget which.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_14",
+   "condition": "ambiguous",
+   "query": "穿过去",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_15",
+   "condition": "ambiguous",
+   "query": "先钻桥再跑三个桩",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_16",
+   "condition": "ambiguous",
+   "query": "Do your obstacle skill.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_17",
+   "condition": "ambiguous",
+   "query": "上木桩",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_18",
+   "condition": "ambiguous",
+   "query": "Run the posts, the usual number.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_19",
+   "condition": "ambiguous",
+   "query": "过桥",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_20",
+   "condition": "ambiguous",
+   "query": "Handle the wooden thing in front of you.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_21",
+   "condition": "ambiguous",
+   "query": "跑那几个桩",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_22",
+   "condition": "ambiguous",
+   "query": "Go over or under, your call.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_23",
+   "condition": "ambiguous",
+   "query": "Next obstacle please.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_ambiguous_24",
+   "condition": "ambiguous",
+   "query": "把那排桩子过了，有几个我也不清楚",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_1",
+   "condition": "out_of_scope",
+   "query": "Wave hello to everyone.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_2",
+   "condition": "out_of_scope",
+   "query": "帮我拿一杯水过来",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_3",
+   "condition": "out_of_scope",
+   "query": "Dance for me.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_4",
+   "condition": "out_of_scope",
+   "query": "跳上那张桌子",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_5",
+   "condition": "out_of_scope",
+   "query": "Walk up the stairs to the second floor.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_6",
+   "condition": "out_of_scope",
+   "query": "翻个跟头",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_7",
+   "condition": "out_of_scope",
+   "query": "What's the weather like today?",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_8",
+   "condition": "out_of_scope",
+   "query": "Climb over the brick wall.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_9",
+   "condition": "out_of_scope",
+   "query": "坐下休息一会儿",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_10",
+   "condition": "out_of_scope",
+   "query": "Open the door for me.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_11",
+   "condition": "out_of_scope",
+   "query": "跟我握个手",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_12",
+   "condition": "out_of_scope",
+   "query": "Swim across the pool.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_13",
+   "condition": "out_of_scope",
+   "query": "Walk along the top of the plank bridge like a balance beam.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_14",
+   "condition": "out_of_scope",
+   "query": "倒着走十步",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_15",
+   "condition": "out_of_scope",
+   "query": "Kick the ball into the goal.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_16",
+   "condition": "out_of_scope",
+   "query": "播放一首周杰伦的歌",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_17",
+   "condition": "out_of_scope",
+   "query": "Pick up the box and put it on the shelf.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_18",
+   "condition": "out_of_scope",
+   "query": "原地转三圈",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_19",
+   "condition": "out_of_scope",
+   "query": "Turn off the lights.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_20",
+   "condition": "out_of_scope",
+   "query": "Stand on one leg for ten seconds.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_21",
+   "condition": "out_of_scope",
+   "query": "帮我把地扫一下",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_22",
+   "condition": "out_of_scope",
+   "query": "Push the cart over to the corner.",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_23",
+   "condition": "out_of_scope",
+   "query": "唱首歌给我听吧",
+   "expected_action": null,
+   "should_abstain": true
+  },
+  {
+   "id": "t2_out_of_scope_24",
+   "condition": "out_of_scope",
+   "query": "Lie down flat on the floor.",
+   "expected_action": null,
+   "should_abstain": true
+  }
+ ]
+}
