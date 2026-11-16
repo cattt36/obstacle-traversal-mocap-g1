@@ -3,7 +3,7 @@
 This dataset accompanies the paper
 
 > **Decoupling Rhythm from Skill: Layout-Adaptive Execution of Humanoid Skills from Human Demonstrations**
-> TODO: authors, venue, year, link
+> (https://github.com/cattt36/layout-adaptive-humanoid-skills)
 
 It contains whole-body human demonstrations of three obstacle-traversal skills, recorded by optical motion capture synchronized with force plates placed at the footholds on the obstacles. Each trial is paired with its motion retargeted to the 29-DoF Unitree G1, the processed robot reference and the obstacle layout used in simulation. Natural-language instructions are provided for each task.
 
